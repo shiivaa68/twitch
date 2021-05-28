@@ -6,9 +6,9 @@ import reportWebVitals from './reportWebVitals';
 import {Provider} from 'react-redux'
 import {createStore,applyMiddleware,compose} from 'redux'
 import reducers from './reducers'
-
+import reduxThunk from 'redux-thunk'
 const composeEnhance =window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
-const store = createStore(reducers,composeEnhance(applyMiddleware()))
+const store = createStore(reducers,composeEnhance(applyMiddleware(reduxThunk)))
 
 ReactDOM.render(
   <React.StrictMode>
