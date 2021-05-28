@@ -65,7 +65,6 @@ renderAuthButton(){
         )
     }
 }
-
     render(){
         return(
             <div>
